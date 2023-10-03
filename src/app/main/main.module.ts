@@ -7,6 +7,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ListAgentComponent } from './list-agent/list-agent.component';
 import { SideBarreComponent } from './side-barre/side-barre.component';
 import { HeaderComponent } from './header/header.component';
+import { QrcodeComponent } from './qrcode/qrcode.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HeaderComponent } from './header/header.component';
     AccueilComponent,
     ListAgentComponent,
     SideBarreComponent,
-    HeaderComponent
+    HeaderComponent,
+    QrcodeComponent
   ],
   imports: [
     CommonModule,
