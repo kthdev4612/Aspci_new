@@ -1,0 +1,27 @@
+.carte {
+    width: 270px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icone {
+    width: 50px;
+    height: 50px;
+    // margin: 0 auto;
+    font-size: 40px; /* Taille de l'icône */
+    color: #fff; /* Couleur de l'icône */
+    
+}
+
+h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.tb2{
+    border: 1px solid #cd0f0f;
+}
+.tb1{
+    border: 1px solid #0fcd77;
+}

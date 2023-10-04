@@ -4,6 +4,7 @@ import { MainComponent } from './main.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ListAgentComponent } from './list-agent/list-agent.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
+import { AgentRapportComponent } from './agent-rapport/agent-rapport.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'accueill', pathMatch: 'full' },
       { path: 'accueill', component: AccueilComponent },
       { path: 'lists_agents', component: ListAgentComponent },
+      { path: 'agentt_rapport', component: AgentRapportComponent },
       { path: 'qrcode', component: QrcodeComponent },
     ],
   },
