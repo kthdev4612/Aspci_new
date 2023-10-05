@@ -9,6 +9,7 @@ import { SideBarreComponent } from './side-barre/side-barre.component';
 import { HeaderComponent } from './header/header.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { AgentRapportComponent } from './agent-rapport/agent-rapport.component';
+import { FichePayeComponent } from './fiche-paye/fiche-paye.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AgentRapportComponent } from './agent-rapport/agent-rapport.component';
     SideBarreComponent,
     HeaderComponent,
     QrcodeComponent,
-    AgentRapportComponent
+    AgentRapportComponent,
+    FichePayeComponent
   ],
   imports: [
     CommonModule,
