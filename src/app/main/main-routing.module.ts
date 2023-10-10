@@ -6,6 +6,7 @@ import { ListAgentComponent } from './list-agent/list-agent.component';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { AgentRapportComponent } from './agent-rapport/agent-rapport.component';
 import { FichePayeComponent } from './fiche-paye/fiche-paye.component';
+import { PartenaireComponent } from './partenaire/partenaire.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: 'agentt_rapport', component: AgentRapportComponent },
       { path: 'fiche_paye', component: FichePayeComponent },
       { path: 'qrcode', component: QrcodeComponent },
+      { path: 'partenaire', component: PartenaireComponent },
     ],
   },
 ];
