@@ -4,6 +4,7 @@ import { SuperviseurComponent } from './superviseur.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ListSectionAgentComponent } from './list-section-agent/list-section-agent.component';
 import { AgentSectionRapportComponent } from './agent-section-rapport/agent-section-rapport.component';
+import { QrCodeComponent } from './qr-code/qr-code.component';
 const routes: Routes = [
   {
     path: '',
@@ -15,6 +16,10 @@ const routes: Routes = [
       {
         path: 'agent_section_rapport',
         component: AgentSectionRapportComponent,
+      },
+      {
+        path: 'qrcode',
+        component: QrCodeComponent,
       },
     ],
   },

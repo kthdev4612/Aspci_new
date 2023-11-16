@@ -8,6 +8,7 @@ import { SideBarreComponent } from './side-barre/side-barre.component';
 import { HeaderComponent } from './header/header.component';
 import { AgentSectionRapportComponent } from './agent-section-rapport/agent-section-rapport.component';
 import { ListSectionAgentComponent } from './list-section-agent/list-section-agent.component';
+import { QrCodeComponent } from './qr-code/qr-code.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ListSectionAgentComponent } from './list-section-agent/list-section-age
     SideBarreComponent,
     HeaderComponent,
     AgentSectionRapportComponent,
-    ListSectionAgentComponent
+    ListSectionAgentComponent,
+    QrCodeComponent
   ],
   imports: [
     CommonModule,
