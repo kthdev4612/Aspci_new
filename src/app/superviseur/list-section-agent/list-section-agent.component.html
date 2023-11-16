@@ -1,1 +1,211 @@
-<p>list-section-agent works!</p>
+<div class="container">
+    <div class="row">
+      <!-- <div class="col-2"></div> -->
+      <div class="col-12 border p-3" style="margin-top: 10%">
+        <div class="row">
+          <div class="col-4">
+            <button class="btn btn-primary mb-2">
+              <i class="fa-solid fa-download"></i> télécharger
+            </button>
+          </div>
+          <div class="col-6">
+            <h3>LISTES DES AGENTS DE ASPCI-CI</h3>
+          </div>
+          <div class="col-2">
+            <button
+              class="btn btn-warning mb-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <table class="table table-striped" style="width: 100%">
+          <thead>
+            <tr>
+              <th scope="col" class="bg-dark text-white">ID</th>
+              <th>MATRICULE</th>
+              <th>NOM</th>
+              <th>PRENOM</th>
+              <th>EMAIL</th>
+              <th>AGE</th>
+              <th>LEU DE NAISSANCE</th>
+              <th>CONTACT</th>
+              <th>CONTACT DU PARENT</th>
+              <th>FONCTION</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>1234K</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>@mdo</td>
+              <td>
+                <button class="btn btn-warning me-2">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button class="btn btn-danger">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- <div class="col-2"></div> -->
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
+            Renseignez tout les champs du formulaire
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row">
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label">Prénom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Nom de famille</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+  
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Adresse Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+  
+            <div class="row">
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Date de Naissance</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Lieu de naissance</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Numero de téléphone</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Fonction de l'agent</label
+                >
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>selectionner</option>
+                  <option value="1">chef d'agent</option>
+                  <option value="2">agent de terrain</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Nom d'un parent</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3 col-6">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Numero du parent</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+  
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="margin-left: 40%"
+            >
+              AJOUTER
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
