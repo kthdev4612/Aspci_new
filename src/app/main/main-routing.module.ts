@@ -16,7 +16,6 @@ const routes: Routes = [
       { path: '', redirectTo: 'accueill', pathMatch: 'full' },
       { path: 'accueill', component: AccueilComponent },
       { path: 'lists_agents', component: ListAgentComponent },
-      { path: 'agentt_rapport', component: AgentRapportComponent },
       { path: 'fiche_paye', component: FichePayeComponent },
       { path: 'qrcode', component: QrcodeComponent },
       { path: 'partenaire', component: PartenaireComponent },

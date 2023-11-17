@@ -1,8 +1,50 @@
+.all-a{
+  display: flex;
+  justify-content: space-around;
+}
+ .all-a a{
+  max-width: 23.75%;
+ }
+
+.vert{
+  border-radius: 80px;
+  background: linear-gradient(125deg, #09ff00, #f0f0f0);
+  box-shadow:  8px 8px 16px #b1b1b1,
+             -8px -8px 16px #ffffff;
+  }
+
+.jaune{
+  border-radius: 80px;
+  background: linear-gradient(125deg, #fbff00, #f0f0f0);
+  box-shadow:  8px 8px 16px #b1b1b1,
+             -8px -8px 16px #ffffff;
+}
+
+.bleu{
+  border-radius: 80px;
+  background: linear-gradient(140deg, #0400ff, #f0f0f0);
+  box-shadow:  8px 8px 16px #b1b1b1,
+             -8px -8px 16px #ffffff;
+}
+
+.orange{
+  border-radius: 80px;
+  background: linear-gradient(140deg, #ff7b00, #f0f0f0);
+  box-shadow:  8px 8px 16px #b1b1b1,
+             -8px -8px 16px #ffffff;
+}
+
 .carte {
-    width: 200px;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
     cursor: pointer;
+}
+
+.cartegr{
+  // border: 1px solid red;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .icone {
@@ -10,18 +52,27 @@
     height: 50px;
     // margin: 0 auto;
     font-size: 40px; /* Taille de l'icône */
-    color: #fff; /* Couleur de l'icône */
-    
+    color: #000000; /* Couleur de l'icône */
+
 }
 
 h2 {
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     margin-top: 10px;
+    text-align: center;
 }
 .tb2{
-    border: 1px solid #cd0f0f;
+    border-top: 5px solid #cd0f0f;
+    border-right: 1px solid #cd0f0f;
+    border-bottom: 1px solid #cd0f0f;
+    border-left: 5px solid #cd0f0f;
+    height: auto;
 }
 .tb1{
-    border: 1px solid #0fcd77;
+    border-top: 5px solid #0fcd77;
+    border-right: 1px solid #0fcd77;
+    border-bottom: 1px solid #0fcd77;
+    border-left: 5px solid #0fcd77;
+    height: auto;
 }

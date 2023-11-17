@@ -5,7 +5,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { ListSectionAgentComponent } from './list-section-agent/list-section-agent.component';
 import { AgentSectionRapportComponent } from './agent-section-rapport/agent-section-rapport.component';
 import { QrCodeComponent } from './qr-code/qr-code.component';
-const routes: Routes = [
+const routees: Routes = [
   {
     path: '',
     component: SuperviseurComponent,
@@ -26,7 +26,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routees)],
   exports: [RouterModule],
 })
 export class SuperviseurRoutingModule {}

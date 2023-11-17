@@ -1,9 +1,12 @@
-.all-a a {
-  color: rgb(255, 255, 255);
+.all-a{
+  display: flex;
+  justify-content: space-around;
 }
+ .all-a a{
+  max-width: 23.75%;
+ }
 
 .vert{
-  margin-left: 10px;
   border-radius: 80px;
   background: linear-gradient(125deg, #09ff00, #f0f0f0);
   box-shadow:  8px 8px 16px #b1b1b1,
@@ -25,33 +28,21 @@
 }
 
 .orange{
-  margin-left: 10px;
-  margin-right: 10px;
   border-radius: 80px;
   background: linear-gradient(140deg, #ff7b00, #f0f0f0);
   box-shadow:  8px 8px 16px #b1b1b1,
              -8px -8px 16px #ffffff;
 }
 
-.orange:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-}
-
 .carte {
-    width: 270px;
     padding: 10px;
-    margin-left: 35px;
-    width: 200px;
-    padding: 8px;
     text-align: center;
     cursor: pointer;
 }
 
 .cartegr{
-  width: 270px;
+  // border: 1px solid red;
   padding: 10px;
-  margin-left: 35%;
   text-align: center;
   cursor: pointer;
 }
