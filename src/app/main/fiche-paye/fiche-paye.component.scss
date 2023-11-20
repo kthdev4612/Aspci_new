@@ -6,48 +6,61 @@
 
 .session1{
   border: 1px solid red;
-  height: 300px;
+  height: 385px;
+  background-image: url(../fiche-paye/diapo/primage.jpg);
   background-attachment: fixed;
   background-size: 100%;
   background-repeat: no-repeat;
 
 
-//   -webkit-animation-name: diapo1;
-//   -webkit-animation-duration: 25s;
-//   -webkit-animation-timing-function: linear;
-//   -webkit-animation-iteration-count: infinite;
-//   -webkit-animation-direction: normal;
+  -webkit-animation-name: session1;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
 
-//   -moz-animation-name: diapo1;
-//   -moz-animation-duration: 25s;
-//   -moz-animation-timing-function: linear;
-//   -moz-animation-iteration-count: infinite;
-//   -moz-animation-direction: normal;
+  -moz-animation-name: session1;
+  -moz-animation-duration: 20s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
 
-//   animation-name: diapo1;
-//   animation-duration: 20s;
-//   animation-timing-function: linear;
-//   animation-iteration-count: infinite;
-//   animation-direction: normal;
-// }
+  animation-name: session1;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 
-// @-webkit-keyframes diapo1{
-//   0%{background-image: url("image-diapo1.png");}
-//   25%{background-image: url("image-diapo2.png");}
-//   50%{background-image: url("image-diapo3.png");}
-//   75%{background-image: url("image-diapo4.png");}
-// }
+@-webkit-keyframes session1{
+  0%,
+  20%{background-image: url(../fiche-paye/diapo/primage.jpg);}
+  25%,
+  45%{background-image: url(../fiche-paye/diapo/primage.jpg);}
+  50%,
+  70%{background-image: url(../fiche-paye/diapo/diapo2.jpg);}
+  75%,
+  95%{background-image: url(../fiche-paye/diapo/dispo3.jpg);}
+  100%{background-image: url(../fiche-paye/diapo/diapo4.jpg);}
+}
 
-// @-moz-keyframes diapo1{
-//   0%{background-image: url("image-diapo1.png");}
-//   25%{background-image: url("image-diapo2.png");}
-//   50%{background-image: url("image-diapo3.png");}
-//   75%{background-image: url("image-diapo4.png");}
-// }
+@-moz-keyframes session1{
+  0%,
+  20%{background-image: url(../fiche-paye/diapo/primage.jpg);}
+  25%,
+  45%{background-image: url(../fiche-paye/diapo/primage.jpg);}
+  50%,
+  70%{background-image: url(../fiche-paye/diapo/diapo2.jpg);}
+  75%,
+  95%{background-image: url(../fiche-paye/diapo/dispo3.jpg);}
+  100%{background-image: url(../fiche-paye/diapo/diapo4.jpg);}
+}
 
-// @-keyframes diapo1{
-//   0%{background-image: url("image-diapo1.png");}
-//   25%{background-image: url("image-diapo2.png");}
-//   50%{background-image: url("image-diapo3.png");}
-//   75%{background-image: url("image-diapo4.png");}
+@keyframes session1{
+  0%,
+  20%{background-image: url(../fiche-paye/diapo/primage.jpg);}
+  25%,
+  45%{background-image: url(../fiche-paye/diapo/primage.jpg);}
+  50%,
+  70%{background-image: url(../fiche-paye/diapo/diapo2.jpg);}
+  75%,
+  95%{background-image: url(../fiche-paye/diapo/dispo3.jpg);}
+  100%{background-image: url(../fiche-paye/diapo/diapo4.jpg);}
 }
