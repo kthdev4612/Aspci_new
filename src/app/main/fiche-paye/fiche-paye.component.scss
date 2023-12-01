@@ -1,12 +1,13 @@
 .grdiv{
   border: 1px solid red;
   height: auto;
+  padding: 0px;
   padding-top: 70px;
 }
 
 .session1{
-  border: 1px solid red;
-  height: 385px;
+  height: 380px;
+  margin: 0pxs;
   background-image: url(../fiche-paye/diapo/primage.jpg);
   background-attachment: fixed;
   background-size: 100%;
@@ -63,4 +64,9 @@
   75%,
   95%{background-image: url(../fiche-paye/diapo/dispo3.jpg);}
   100%{background-image: url(../fiche-paye/diapo/diapo4.jpg);}
+}
+
+.session2{
+  border: 1px solid red;
+  height: 385px;
 }
