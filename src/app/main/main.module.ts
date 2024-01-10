@@ -11,6 +11,7 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
 import { AgentRapportComponent } from './agent-rapport/agent-rapport.component';
 import { FichePayeComponent } from './fiche-paye/fiche-paye.component';
 import { PartenaireComponent } from './partenaire/partenaire.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { PartenaireComponent } from './partenaire/partenaire.component';
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class MainModule { }
