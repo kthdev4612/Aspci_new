@@ -7,6 +7,7 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
 import { AgentRapportComponent } from './agent-rapport/agent-rapport.component';
 import { FichePayeComponent } from './fiche-paye/fiche-paye.component';
 import { PartenaireComponent } from './partenaire/partenaire.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'fiche_paye', component: FichePayeComponent },
       { path: 'qrcode', component: QrcodeComponent },
       { path: 'partenaire', component: PartenaireComponent },
+      { path: 'edit/:u_uid', component: EditComponent },
     ],
   },
 ];

@@ -33,4 +33,27 @@ export class ApiService {
 
     return this.api.post("http://127.0.0.1:5000/api/user/DeletedUser", body, httpOptions)
   }
+
+  getSingleUser(body:any){
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      })
+    };
+
+    return this.api.post("http://127.0.0.1:5000/api/user/GetSingleUser", body, httpOptions)
+  }
+
+
+  updateUser(body:any){
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      })
+    };
+
+    return this.api.post("http://127.0.0.1:5000/api/user/Updateuser", body, httpOptions)
+  }
 }

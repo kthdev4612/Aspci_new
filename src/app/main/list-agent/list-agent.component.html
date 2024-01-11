@@ -53,7 +53,7 @@
 
 
 
-            <button class="btn btn-warning me-2" [routerLink]="[item?.user_uid]" data-bs-target="#exampleModal2" data-bs-toggle="modal">
+            <button class="btn btn-warning me-2" [routerLink]="['/main','edit',item?.user_uid]">
                 <i class="fa-solid fa-pen-to-square"></i>
               </button>
               <button class="btn btn-danger" (click)="deleteUser(item?.user_uid)">
@@ -69,13 +69,7 @@
 </div>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content rounded-0">
       <div class="modal-header">
@@ -164,104 +158,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-<div
-  class="modal fade"
-  id="exampleModal2"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content rounded-0">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">
-          Modifier les informations de l'agent
-        </h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <form [formGroup]="user_form" (submit)="createAllUser()">
-          <div class="row">
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Prénom</label>
-              <input formControlName="firstname" type="text" class="form-control" [value]="data?.firstname" aria-describedby="emailHelp"/>
-            </div>
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Nom de famille</label>
-              <input formControlName="lastname" type="text" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Nom d'utilisateur</label>
-              <input formControlName="username" type="text" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Mot de passe</label>
-              <input formControlName="password" type="text" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
-            <input formControlName="email" type="email" class="form-control" value="" aria-describedby="emailHelp"/>
-          </div>
-
-          <div class="row">
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Date de Naissance</label>
-              <input formControlName="date_of_birth" type="date" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Lieu de naissance</label>
-              <input formControlName="place_of_birth" type="text" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-6 mb-3">
-              <label for="exampleInputEmail1" class="form-label">Numero de téléphone</label>
-              <input formControlName="number" type="email" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Fonction de l'agent</label >
-              <select formControlName="function" class="form-select" aria-label="Default select example">
-                <option selected>selectionner</option>
-                <option value="chef d'agent">chef d'agent</option>
-                <option value="agent de terrain">agent de terrain</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label" >Nom d'un parent</label>
-              <input formControlName="parents_name" type="text" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-            <div class="mb-3 col-6">
-              <label for="exampleInputEmail1" class="form-label">Numero du parent</label>
-              <input formControlName="parents_number" type="text" class="form-control" value="" aria-describedby="emailHelp"/>
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="margin-left: 40%">AJOUTER</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>

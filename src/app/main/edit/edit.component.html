@@ -1,0 +1,85 @@
+<div  class="divgr container">
+  <div class="row">
+    <!-- <div class="col-2"></div> -->
+    <div style="margin-top: 7%;"class="col-12">
+      <div style="text-align: center; margin-bottom: 50px; margin-top: 10px;" class="col-12">
+        <h3>MODIFIER LES INFORMATIONS DE L'AGENT</h3>
+      </div>
+
+
+
+      <form [formGroup]="user_form" (submit)="update()">
+        <div class="row">
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Prénom</label>
+            <input formControlName="firstname" type="text" class="form-control" [value]="data?.firstname" aria-describedby="emailHelp"/>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Nom de famille</label>
+            <input formControlName="lastname" type="text" class="form-control" [value]="data?.lastname" aria-describedby="emailHelp"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Nom d'utilisateur</label>
+            <input formControlName="username" type="text" class="form-control" [value]="data?.username" aria-describedby="emailHelp"/>
+          </div>
+          <!-- <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Mot de passe</label>
+            <input formControlName="password" type="text" class="form-control" [value]="data?.password" aria-describedby="emailHelp"/>
+          </div> -->
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
+          <input formControlName="email" type="email" class="form-control" [value]="data?.email" aria-describedby="emailHelp"/>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Date de Naissance</label>
+            <input formControlName="date_of_birth" type="date" class="form-control" [value]="data?.date_of_birth" aria-describedby="emailHelp"/>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Lieu de naissance</label>
+            <input formControlName="place_of_birth" type="text" class="form-control" [value]="data?.place_of_birth" aria-describedby="emailHelp"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label for="exampleInputEmail1" class="form-label">Numero de téléphone</label>
+            <input formControlName="number" type="email" class="form-control" [value]="data?.number" aria-describedby="emailHelp"/>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Fonction de l'agent</label >
+            <select formControlName="function" class="form-select" [value]="data?.function" aria-label="Default select example">
+              <option selected>selectionner</option>
+              <option value="chef d'agent">chef d'agent</option>
+              <option value="agent de terrain">agent de terrain</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label" >Nom d'un parent</label>
+            <input formControlName="parents_name" type="text" class="form-control" [value]="data?.parents_name" aria-describedby="emailHelp"/>
+          </div>
+          <div class="mb-3 col-6">
+            <label for="exampleInputEmail1" class="form-label">Numero du parent</label>
+            <input formControlName="parents_number" type="text" class="form-control" [value]="data?.parents_number" aria-describedby="emailHelp"/>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="margin-left: 40%">MODIFIER</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+

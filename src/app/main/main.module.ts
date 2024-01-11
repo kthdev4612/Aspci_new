@@ -12,6 +12,7 @@ import { AgentRapportComponent } from './agent-rapport/agent-rapport.component';
 import { FichePayeComponent } from './fiche-paye/fiche-paye.component';
 import { PartenaireComponent } from './partenaire/partenaire.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     QrcodeComponent,
     AgentRapportComponent,
     FichePayeComponent,
-    PartenaireComponent
+    PartenaireComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,
