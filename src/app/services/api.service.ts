@@ -56,4 +56,17 @@ export class ApiService {
 
     return this.api.post("http://127.0.0.1:5000/api/user/Updateuser", body, httpOptions)
   }
+
+  // ------------------------------------
+
+  createAdmins(body:any){
+    const httpOptions = {
+      headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      })
+    };
+
+    return this.api.post("http://127.0.0.1:5000/api/admin/CreateAdmin", body, httpOptions)
+  }
+
 }

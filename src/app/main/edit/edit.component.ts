@@ -61,7 +61,7 @@ constructor(private http: ApiService, private _activate: ActivatedRoute, private
     this.http.updateUser(this.user_form.value).subscribe({
       next: (res:any)=>{
         console.log(res);
-        // this.router.navigate(['/main', 'lists_agents'])
+        this.router.navigate(['/main', 'lists_agents'])
       }
     })
   }

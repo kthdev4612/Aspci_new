@@ -1,0 +1,64 @@
+<div class="container">
+<div class="card">
+  <form class="row" [formGroup]="register_form" (submit)="CreateAdmin()">
+    <div class="col-6">
+       <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Prenom</label>
+          <input formControlName="firstname" type="text" class="form-control">
+       </div>
+    </div>
+
+    <div class="col-6">
+      <div class="mb-3">
+         <label for="exampleInputEmail1" class="form-label">Nom de famille</label>
+         <input formControlName="lastname" type="text" class="form-control">
+      </div>
+   </div>
+
+   <div class="col-6">
+    <div class="mb-3">
+       <label for="exampleInputEmail1" class="form-label">Email</label>
+       <input formControlName="email" type="email" class="form-control">
+    </div>
+   </div>
+
+  <div class="col-6">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Numero</label>
+      <input formControlName="number" type="number" class="form-control">
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nom d'utilisateur</label>
+      <input formControlName="username" type="email" class="form-control">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Mot de passe</label>
+      <input formControlName="password" type="password" class="form-control">
+    </div>
+  </div>
+
+  <div class="col-6 mb-3">
+    <select formControlName="role" class="form-select" aria-label="Default select example">
+      <option selected>Role</option>
+      <option value="Administrateur">Administrateur</option>
+      <option value="Chef des agents">Chef des agents</option>
+    </select>
+  </div>
+  <div class="col-6 mb-3">
+    <select formControlName="country" class="form-select" aria-label="Default select example">
+      <option selected>Pays</option>
+      <option value="Cote d'ivoire">Cote d'ivoire</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Mali">Mali</option>
+    </select>
+  </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
