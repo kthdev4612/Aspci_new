@@ -1,10 +1,52 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ApiService } from 'src/app/services/auth/api.service';
+declare var $:any
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
+
+
+
+  constructor(private http: ApiService, private router: Router){}
+
+
+  data:any
+
+  login_form: FormGroup = new FormGroup({
+    username: new FormControl(null, Validators.required),
+    password: new FormControl(null, Validators.required),
+  })
+
+  ngOnInit(): void {
+
+  }
+
+
+  LoginAdmin(){
+
+    this.http.loginAdmin(this.login_form.value).subscribe({
+      next: (res:any)=>{
+        this.data= res?.result;
+        $.cookie('isLoggedIn', true, { expires: 1 ,path: ''});
+        // $.notify("Access granted", "success");
+        sessionStorage.setItem('infoLogin',JSON.stringify(this.data));
+
+        console.log(res);
+
+        if (res?.status === "success") {
+          this.router.navigate(['/main','accueill'])
+
+        }
+      }
+    })
+
+  }
 
 }

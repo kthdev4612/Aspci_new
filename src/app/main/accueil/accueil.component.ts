@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $: any;
+// declare var $: any;
 
 @Component({
   selector: 'app-accueil',
@@ -7,9 +7,21 @@ declare var $: any;
   styleUrls: ['./accueil.component.scss']
 })
 export class AccueilComponent implements OnInit{
+
+
+  constructor(){}
+
+  //@ts-ignore
+  userInfo:any = JSON.parse(sessionStorage.getItem('infoLogin'))
+  is_user_logged_in = !!sessionStorage.getItem('infoLogin')
+
+
   ngOnInit(): void {
-    $('.table').DataTable();
+    // $('.table').DataTable();
+
+    console.log(this.userInfo);
+
   }
- 
+
 
 }
