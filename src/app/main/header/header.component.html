@@ -16,13 +16,13 @@
     <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
       <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
         <li class="nav-item dropdown">
-          <p class="d-flex">
-            {{AdminInfo?.username}}
+          <!-- <p class="profile"> -->
 
-            <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../assets/images/profile/images.png" alt="" width="35" height="35" class="rounded-circle"/>
+            <a class="nav-link nav-icon-hover profile" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>{{AdminInfo?.email}}</span>
+              <img [src]="AdminInfo?.image" alt="" width="35" height="35" class="rounded-circle"/>
             </a>
-          </p>
+          <!-- </p> -->
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
             <div class="message-body">
               <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
