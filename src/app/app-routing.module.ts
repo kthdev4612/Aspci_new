@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { AuthGuard } from './Guard/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'auth', pathMatch: 'full' },
@@ -14,10 +13,11 @@ const routes: Routes = [
   },
   {
     path: 'superviseur',
-    loadChildren: () =>
-      import('./superviseur/superviseur.module').then(
-        (m) => m.SuperviseurModule
-      ),
+    loadChildren: () => import('./superviseur/superviseur.module').then((m) => m.SuperviseurModule),
+  },
+  {
+    path: 'scanne',
+    loadChildren: () => import('./scanne/scanne.module').then((m) => m.ScanneModule),
   },
 ];
 

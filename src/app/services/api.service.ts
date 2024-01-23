@@ -69,4 +69,10 @@ export class ApiService {
     return this.api.post("http://127.0.0.1:5000/api/admin/CreateAdmin", body, httpOptions)
   }
 
+
+  qr_code(){
+    return this.api.get("http://127.0.0.1:5000/api/qr_code/form")
+  }
+
+
 }

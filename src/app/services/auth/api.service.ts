@@ -13,19 +13,5 @@ export class ApiService {
   }
 
 
-  isLoggedinAdmin(){
-    // return !!$.cookie('isLoggedIn');
-    return !!sessionStorage.getItem('infoLogin');
 
-  }
-
-  isNotLoggedinAdmin(){
-    // return !$.cookie('isLoggedIn');
-    return !sessionStorage.getItem('infoLogin');
-
-  }
-
-  isIntroShowed(){
-    return !sessionStorage.getItem('KL_PASS_INTRO');
-  }
 }
