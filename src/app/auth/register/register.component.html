@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
 <div class="card">
   <form class="row" [formGroup]="register_form" (submit)="CreateAdmin()">
     <div class="col-6">
@@ -61,4 +61,79 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
+</div> -->
+
+<div class="wrapper">
+  <div class="logo">
+      <img src="/assets/images/logos/aspci.jpg" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+      Aspci
+  </div>
+  <form class="p-3 mt-3 row" [formGroup]="register_form" (submit)="CreateAdmin()">
+
+    <div class="col-6">
+      <div class="mb-3">
+         <label for="exampleInputEmail1" class="form-label">Prenom</label>
+         <input formControlName="firstname" type="text" class="form-control">
+      </div>
+   </div>
+
+   <div class="col-6 right">
+     <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nom de famille</label>
+        <input formControlName="lastname" type="text" class="form-control">
+     </div>
+  </div>
+
+  <div class="col-6">
+   <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input formControlName="email" type="email" class="form-control">
+   </div>
+  </div>
+
+ <div class="col-6 right">
+   <div class="mb-3">
+     <label for="exampleInputEmail1" class="form-label">Numero</label>
+     <input formControlName="number" type="number" class="form-control">
+   </div>
+ </div>
+
+ <div class="col-6 mb-3">
+  <label for="exampleInputEmail1" class="form-label">Role</label>
+   <select formControlName="role" class="form-select" aria-label="Default select example">
+     <option value="Administrateur">Administrateur</option>
+     <option value="Chef des agents">Chef des agents</option>
+   </select>
+ </div>
+
+ <div class="col-6 mb-3 right">
+  <label for="exampleInputEmail1" class="form-label">Pays</label>
+   <select formControlName="country" class="form-select" aria-label="Default select example">
+     <option value="Cote d'ivoire">Cote d'ivoire</option>
+     <option value="Ghana">Ghana</option>
+     <option value="Mali">Mali</option>
+   </select>
+ </div>
+
+ <div class="col-6">
+   <div class="mb-3">
+     <label for="exampleInputEmail1" class="form-label">Nom d'utilisateur</label>
+     <input formControlName="username" type="email" class="form-control">
+   </div>
+ </div>
+ <div class="col-6">
+   <div class="mb-3 right">
+     <label for="exampleInputEmail1" class="form-label">Mot de passe</label>
+     <input formControlName="password" type="password" class="form-control">
+   </div>
+ </div>
+
+
+      <button class="btn mt-3" type="submit">S'inscrire</button>
+  </form>
+  <div class="text-center fs-6">
+      <span>J'ai déjà un compte</span>  <a routerLink="/auth/login">Me connecté</a>
+  </div>
 </div>

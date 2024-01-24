@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit{
 
 
   data:any
+  load:boolean=false
 
   login_form: FormGroup = new FormGroup({
     username: new FormControl(null, Validators.required),
@@ -39,7 +40,6 @@ export class LoginComponent implements OnInit{
         sessionStorage.setItem('infoLogin',JSON.stringify(this.data));
 
         console.log(res);
-
         if (res?.status === "success") {
           this.router.navigate(['/main','accueill'])
 

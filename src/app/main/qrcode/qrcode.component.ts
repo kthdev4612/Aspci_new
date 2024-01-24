@@ -23,13 +23,14 @@ export class QrcodeComponent implements OnInit{
 
   getQrcode(){
 
+
     QrCreator.render({
-      text: "this.data",
+      text: "http://localhost:4200/scanne/scann_form",
       radius: 0.5, // 0.0 to 0.5
       ecLevel: 'H', // L, M, Q, H
       fill: '#000', // foreground color
       background: null, // color or null for transparent
-      size: 128 // in pixels
+      size: 250 // in pixels
       //@ts-ignore
     }, document.querySelector('#qr-code'));
 

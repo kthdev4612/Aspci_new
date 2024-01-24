@@ -34,6 +34,8 @@ export class RegisterComponent implements OnInit{
     this.http.createAdmins(this.register_form.value).subscribe({
       next: (res:any)=>{
         this.router.navigate(['/auth','login'])
+        console.log(res);
+
       }
     })
   }
