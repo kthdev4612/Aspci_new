@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { AgentSectionRapportComponent } from './agent-section-rapport/agent-section-rapport.component';
 import { ListSectionAgentComponent } from './list-section-agent/list-section-agent.component';
 import { QrCodeComponent } from './qr-code/qr-code.component';
+import { PresenceMatinaleComponent } from './presence-matinale/presence-matinale.component';
+import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { QrCodeComponent } from './qr-code/qr-code.component';
     HeaderComponent,
     AgentSectionRapportComponent,
     ListSectionAgentComponent,
-    QrCodeComponent
+    QrCodeComponent,
+    PresenceMatinaleComponent,
+    AgentProfileComponent
   ],
   imports: [
     CommonModule,

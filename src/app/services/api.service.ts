@@ -74,5 +74,19 @@ export class ApiService {
     return this.api.get("http://127.0.0.1:5000/api/qr_code/form")
   }
 
+  //--------------------------------------------------------------------
 
+
+  CreateReport(body:any){
+    const httpOptions = {
+      headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      })
+    };
+    return this.api.post("http://127.0.0.1:5000/api/arrive/CreateArrive", body, httpOptions)
+  }
+
+  GetReport(){
+    return this.api.get("http://127.0.0.1:5000/api/arrive/getReport")
+  }
 }

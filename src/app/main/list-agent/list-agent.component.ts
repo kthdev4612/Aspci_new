@@ -29,7 +29,7 @@ export class ListAgentComponent implements OnInit {
   })
 
   ngOnInit(): void {
-    $('.table').DataTable();
+    // $('.table').DataTable();
     this.getAllUsers()
   }
 
