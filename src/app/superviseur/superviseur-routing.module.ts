@@ -26,7 +26,7 @@ const routees: Routes = [
         path: 'prensence_matinale', component: PresenceMatinaleComponent,
       },
       {
-        path: 'agent_profile', component: AgentProfileComponent,
+        path: 'agent_profile/:matricule', component: AgentProfileComponent,
       },
     ],
   },

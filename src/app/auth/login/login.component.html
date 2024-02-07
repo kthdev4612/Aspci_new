@@ -1,27 +1,4 @@
-<!-- <div class="container">
-  <div class="card">
-    <form class="row" [formGroup]="login_form" (submit)="LoginAdmin()">
-
-    <div class="col-6">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nom d'utilisateur</label>
-        <input formControlName="username" type="email" class="form-control">
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Mot de passe</label>
-        <input formControlName="password" type="password" class="form-control">
-      </div>
-    </div>
-
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
-  </div> -->
-
-
-  <div class="wrapper">
+<!-- <div class="wrapper">
     <div class="logo">
         <img src="/assets/images/logos/aspci.jpg" alt="">
     </div>
@@ -48,10 +25,80 @@
     <div class="text-center fs-6">
         <span>J'ai pas de compte</span>  <a routerLink="/auth/register" id="connexion">M'inscrire</a>
     </div>
-  </div>
+</div>
+ -->
+
+ <div class="conatainer">
+    <div class="corps">
+
+     <div class="titre mb-5">
+      <h1 >Connexion</h1>
+      <p>Bonjourn, Bienvenue cher Admin</p>
+     </div>
+      <div class="row mb-3">
+        <div class="col"></div>
+        <div class="col">
+          <i class="fa-brands fa-google"></i> <span>Se connecter avec Google</span>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col"></div>
+        <div class="col">
+          <span>Ou se connecter avec Email</span>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form [formGroup]="login_form" (submit)="LoginAdmin()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username</label>
+              <input formControlName="username" type="text" class="form-control" placeholder="ex: abcd123">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+              <input formControlName="password" type="password" class="form-control" placeholder="ex: abcd123">
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                </div>
+              </div>
+              <div class="col">
+                <a href="">Mot de passe oublié ?</a>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Connexion</button>
+          </form>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="text-center">
+         <span>J'ai pas de compte</span>  <a routerLink="/auth/register" id="connexion" style="margin-left: 6px; font-style: italic;">M'inscrire</a>
+
+      </div>
 
 
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+        <div class="toast-header">
+          <strong class="me-auto">Titre du toast</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Contenu du toast.
+        </div>
+      </div>
 
-  <!-- <div class="wrapper" *ngIf="load">
-      <div class="loader" ></div>
-  </div> -->
+
+    </div>
+ </div>
+
+

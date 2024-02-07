@@ -37,7 +37,7 @@
             <th scope="row"> {{item?.id}} </th>
             <td> {{item?.matricule}} </td>
             <td> {{item?.date_and_hour}} </td>
-            <td> <a routerLink="/superviseur/agent_profile" class="btn btn-warning"><i class="fa-solid fa-eye"></i></a ></td>
+            <td> <a [routerLink]="['/superviseur','agent_profile', item?.matricule]" class="btn btn-warning"><i class="fa-solid fa-eye"></i></a ></td>
           </tr>
         </tbody>
       </table>

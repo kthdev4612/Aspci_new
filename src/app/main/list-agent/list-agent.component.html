@@ -25,7 +25,7 @@
       <table style="margin-top: 100px; height: auto; border-right: 1px solid rgb(224, 221, 221);" class="table table-stripe">
         <thead>
           <tr>
-            <th scope="col" class="bg-dark text-white">ID</th>
+            <th scope="col">ID</th>
             <th>MATRICULE</th>
             <th>NOM</th>
             <th>PRENOM</th>
@@ -84,7 +84,7 @@
         ></button>
       </div>
       <div class="modal-body">
-        <form [formGroup]="user_form" (submit)="createAllUser()">
+        <form [formGroup]="user_form" (submit)="createAllUser()" enctype="multipart/form-data">
           <div class="row">
             <div class="mb-3 col-6">
               <label for="exampleInputEmail1" class="form-label">Prénom</label>
@@ -148,6 +148,7 @@
               <input formControlName="parents_number" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
             </div>
           </div>
+
 
           <button type="submit" class="btn btn-primary" style="margin-left: 40%">AJOUTER</button>
         </form>

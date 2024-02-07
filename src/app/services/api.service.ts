@@ -89,4 +89,8 @@ export class ApiService {
   GetReport(){
     return this.api.get("http://127.0.0.1:5000/api/arrive/getReport")
   }
+
+  getSingleUserReport(body:any){
+    return this.api.post("http://127.0.0.1:5000/api/arrive/getSingleArrive", body)
+  }
 }
