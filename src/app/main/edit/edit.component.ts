@@ -15,6 +15,7 @@ constructor(private http: ApiService, private _activate: ActivatedRoute, private
 
   u_id:any
   data:any
+
   user_form: FormGroup = new FormGroup({
     firstname : new FormControl(null, Validators.required),
     lastname : new FormControl(null, Validators.required),

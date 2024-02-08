@@ -11,6 +11,7 @@ import { ListSectionAgentComponent } from './list-section-agent/list-section-age
 import { QrCodeComponent } from './qr-code/qr-code.component';
 import { PresenceMatinaleComponent } from './presence-matinale/presence-matinale.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
+import { ViewReportComponent } from './view-report/view-report.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AgentProfileComponent } from './agent-profile/agent-profile.component';
     ListSectionAgentComponent,
     QrCodeComponent,
     PresenceMatinaleComponent,
-    AgentProfileComponent
+    AgentProfileComponent,
+    ViewReportComponent
   ],
   imports: [
     CommonModule,

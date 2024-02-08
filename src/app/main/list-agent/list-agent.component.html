@@ -53,10 +53,10 @@
 
 
 
-            <button class="btn btn-warning me-2" [routerLink]="['/main','edit',item?.user_uid]">
+            <button class="btn btn-warning me-2" [routerLink]="['/main','edit',item?.uid]">
                 <i class="fa-solid fa-pen-to-square"></i>
               </button>
-              <button class="btn btn-danger" (click)="deleteUser(item?.user_uid)">
+              <button class="btn btn-danger" (click)="deleteUser(item?.uid)">
                 <i class="fa-solid fa-trash-can"></i>
               </button>
             </td>

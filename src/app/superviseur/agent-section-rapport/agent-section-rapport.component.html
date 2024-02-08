@@ -1,60 +1,23 @@
 <br><br><br><br>
-<div style="text-align: center;" class="div-gr container">
+<div style="text-align: center;" class="container">
   <h2>RAPPORT DES AGENTS</h2><br>
   <div class="row-ex row container">
-    <div class="col-ex col-4">
-                  <div class="div-photo flex-shrink-0">
-                    <img src="https://ionicframework.com/docs/img/demos/card-media.png"
-                      alt="Generic placeholder image" class="img-fluid"
-                      style="width: 100%; height: 100%; border-radius: 10px;">
-                  </div>
-                  <div class="div-info flex-grow-1">
-                    <h5 class="mb-1">KOUASSI JULBERT</h5>
-                    <div class="info-text rounded-2 p-2 mb-1"
-                      style="background-color: #efefef;">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="div-button d-flex">
-                      <button type="button" class="button btn btn-success">Validé</button>
-                      <button type="button" class="button btn btn-danger">Ajournné</button>
-                    </div>
-                  </div>
-    </div>
-    <div class="col-ex col-4">
-      <div class="div-photo flex-shrink-0">
-        <img src="https://ionicframework.com/docs/img/demos/card-media.png"
-          alt="Generic placeholder image" class="img-fluid"
-          style="width: 100%; height: 100%; border-radius: 10px;">
-      </div>
-      <div class="div-info flex-grow-1">
-        <h5 class="mb-1">ZADI FRANCK</h5>
-        <div class="info-text rounded-2 p-2 mb-1"
-          style="background-color: #efefef;">
-        <p>Lorem ipsum dolor sit amet.</p>
+
+
+    <div class="card" style="width: 16rem; margin-left: 5px; cursor: pointer;" *ngFor="let item of data; let i = index" #card >
+      <h6 class="card-subtitle mt-1 text-body-secondary" style="margin-left: 6em;">
+        <button type="submit" class="btn-close" (click)="closeCard(card)"></button>
+      </h6>
+      <div class="card-body" [routerLink]="['/superviseur', 'view_report', item?.uid]">
+        <div class="d-flex">
+          <h5 class="card-title"> {{item?.matricule}} </h5>
+
         </div>
-        <div class="div-button d-flex">
-          <button type="button" class="button btn btn-success">Validé</button>
-          <button type="button" class="button btn btn-danger">Ajournné</button>
-        </div>
+        <p class="card-text"> {{item?.comment}} </p>
       </div>
     </div>
-    <div class="col-ex col-4">
-      <div class="div-photo flex-shrink-0">
-        <img src="https://ionicframework.com/docs/img/demos/card-media.png"
-          alt="Generic placeholder image" class="img-fluid"
-          style="width: 100%; height: 100%; border-radius: 10px;">
-      </div>
-      <div class="div-info flex-grow-1">
-        <h5 class="mb-1">RUTH EMMA</h5>
-        <div class="info-text rounded-2 p-2 mb-1"
-          style="background-color: #efefef;">
-        <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="div-button d-flex">
-          <button type="button" class="button btn btn-success">Validé</button>
-          <button type="button" class="button btn btn-danger">Ajournné</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
 </div>
+
+

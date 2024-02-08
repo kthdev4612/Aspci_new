@@ -7,6 +7,7 @@ import { AgentSectionRapportComponent } from './agent-section-rapport/agent-sect
 import { QrCodeComponent } from './qr-code/qr-code.component';
 import { PresenceMatinaleComponent } from './presence-matinale/presence-matinale.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
+import { ViewReportComponent } from './view-report/view-report.component';
 const routees: Routes = [
   {
     path: '',
@@ -27,6 +28,9 @@ const routees: Routes = [
       },
       {
         path: 'agent_profile/:matricule', component: AgentProfileComponent,
+      },
+      {
+        path: 'view_report/:u_uid', component: ViewReportComponent,
       },
     ],
   },
