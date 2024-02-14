@@ -12,6 +12,8 @@ import { QrCodeComponent } from './qr-code/qr-code.component';
 import { PresenceMatinaleComponent } from './presence-matinale/presence-matinale.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { ViewReportComponent } from './view-report/view-report.component';
+import { ReactiveFormsModule } from '@angular/forms';
+// import DataTable from 'datatables.net-dt';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { ViewReportComponent } from './view-report/view-report.component';
   ],
   imports: [
     CommonModule,
-    SuperviseurRoutingModule
+    SuperviseurRoutingModule,
+    ReactiveFormsModule,
+    // DataTable
   ]
 })
 export class SuperviseurModule { }

@@ -36,22 +36,23 @@
       <table style="padding-top: 30px; margin-bottom: 30px;" class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Matricul</th>
-              <th scope="col">Nom</th>
-              <th scope="col">Rapport du jour</th>
-              <th scope="col">Action</th>
+              <th scope="col">Matricule de l'Agent</th>
+              <th scope="col">Nom de l'Agent</th>
+              <th scope="col">Status</th>
+              <th scope="col">Nom du chef de Section</th>
+              <!-- <th scope="col">Action</th> -->
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-
+          <tbody >
+              <ng-container *ngFor="let item of data">
+                <tr *ngIf="item?.status === 'validé'">
+                  <th scope="row"> {{item?.matricule}} </th>
+                  <td> {{item?.agent_firstname}} </td>
+                  <td> {{item?.status}} </td>
+                  <td> {{item?.user_firstname}} </td>
+                  <!-- <td>@mdo</td> -->
+                </tr>
+              </ng-container>
           </tbody>
         </table>
   </div>
@@ -63,21 +64,23 @@
       <table style="padding-top: 30px; margin-bottom: 30px;" class="table table-striped">
           <thead>
             <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Matricul</th>
-              <th scope="col">Nom</th>
-              <th scope="col">Rapport du jour</th>
+              <th scope="col">Matricule de l'Agent</th>
+              <th scope="col">Nom de l'Agent</th>
+              <th scope="col">Status</th>
+              <th scope="col">Nom du chef de Section</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
+            <ng-container *ngFor="let item of data">
+              <tr *ngIf="item?.status === 'Ajournné'">
+                <th scope="row"> {{item?.matricule}} </th>
+                <td> {{item?.agent_firstname}} </td>
+                <td> {{item?.status}} </td>
+                <td> {{item?.user_firstname}} </td>
+                <!-- <td>@mdo</td> -->
+              </tr>
+            </ng-container>
 
           </tbody>
         </table>

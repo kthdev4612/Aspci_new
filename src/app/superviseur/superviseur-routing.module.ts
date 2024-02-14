@@ -30,7 +30,7 @@ const routees: Routes = [
         path: 'agent_profile/:matricule', component: AgentProfileComponent,
       },
       {
-        path: 'view_report/:u_uid', component: ViewReportComponent,
+        path: 'view_report/:u_uid/:report_id', component: ViewReportComponent,
       },
     ],
   },

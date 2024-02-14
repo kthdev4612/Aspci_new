@@ -106,7 +106,29 @@ export class ApiService {
     return this.api.post("http://127.0.0.1:5000/api/report/CreateReport", body, httpOptions)
   }
 
+  getSingleRepot(body:any){
+    const httpOptions = {
+      headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      })
+    };
+    return this.api.post("http://127.0.0.1:5000/api/report/getSingleReport", body, httpOptions)
+  }
+
   GetReport1(){
     return this.api.get("http://127.0.0.1:5000/api/report/GetAllReport")
+  }
+//----------------------------------------------------------------------------------------------
+  ReportStatusCreated(body:any){
+    const httpOptions = {
+      headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      })
+    };
+    return this.api.post("http://127.0.0.1:5000/api/reportstatus/CreateReportStatus", body, httpOptions)
+  }
+
+  GetReportStatus(){
+    return this.api.get("http://127.0.0.1:5000/api/reportstatus/GetAllReportStatus")
   }
 }

@@ -40,7 +40,13 @@ export class LoginComponent implements OnInit{
 
         console.log(res);
         if (res?.status === "success") {
-          this.router.navigate(['/main','accueill'])
+          console.log(this.data);
+          if (this.data?.role === "Administrateur") {
+            this.router.navigate(['/main','accueill'])
+          }
+          if (this.data?.role === "Chef des agents") {
+            this.router.navigate(['/superviseur','accueill'])
+          }
 
         }
       }

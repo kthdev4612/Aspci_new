@@ -26,7 +26,7 @@ export class AgentSectionRapportComponent implements OnInit{
     this.http.GetReport1()?.subscribe({
       next: (r:any)=>{
         this.data = r?.result
-        console.log(this.data);
+        // console.log(this.data);
 
       }
     })

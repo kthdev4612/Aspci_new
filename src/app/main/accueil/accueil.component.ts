@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// declare var $: any;
+declare var $: any;
 
 @Component({
   selector: 'app-accueil',
@@ -17,11 +17,16 @@ export class AccueilComponent implements OnInit{
 
 
   ngOnInit(): void {
-    // $('.table').DataTable();
-
+    this.data()
     console.log(this.userInfo);
 
   }
 
 
+  data(){
+    setTimeout(() => {
+    $('.table').DataTable()
+
+    }, 1000);
+  }
 }

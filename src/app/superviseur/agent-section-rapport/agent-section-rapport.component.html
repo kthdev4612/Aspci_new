@@ -8,7 +8,7 @@
       <h6 class="card-subtitle mt-1 text-body-secondary" style="margin-left: 6em;">
         <button type="submit" class="btn-close" (click)="closeCard(card)"></button>
       </h6>
-      <div class="card-body" [routerLink]="['/superviseur', 'view_report', item?.uid]">
+      <div class="card-body" [routerLink]="['/superviseur', 'view_report', item?.uid, item?.report_id]">
         <div class="d-flex">
           <h5 class="card-title"> {{item?.matricule}} </h5>
 
